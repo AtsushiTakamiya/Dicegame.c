@@ -19,11 +19,14 @@ int main(){
   printf("Die 2: %d\n",Die2);
   printf("Total Value: %d\n",T);
   
+<<<<<<< HEAD
   if(T > 7){
     printf("%s won!\n",Name);
   } else {
     printf("%s lost!\n",Name);
   }
   
+=======
+>>>>>>> refs/heads/experimental
   return 0;
 }

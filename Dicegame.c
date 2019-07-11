@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int main(){
-  int Die1,Die2,T;
+  int Die1,Die2,Die3,T;
   char Name[30];
 
   printf("What is your name?\n");
@@ -23,6 +23,23 @@ int main(){
     printf("%s won!\n",Name);
   } else {
     printf("%s lost!\n",Name);
+  }
+
+  if(T <= 7){
+    printf("One more chance!\n");
+    printf("Rolling the dice...\n");
+    
+    Die3  = rand() % 6 + 1;
+    T = T + Die3;
+    
+    printf("Die 3: %d\n",Die3);
+    printf("Total Value: %d\n",T);
+    
+    if(T > 7){
+      printf("%s won!\n",Name);
+    } else {
+      printf("%s lost!\n",Name);
+    }
   }
   
   return 0;
